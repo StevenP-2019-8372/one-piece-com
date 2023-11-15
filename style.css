@@ -9,9 +9,6 @@ body {
     align-items: center;
     background-color: rgb(0, 0, 0);
     margin: 0;
-}
-
-main {
     background-image: url(img/54-548122_one-piece-logo-png.ico);
 }
 
@@ -19,9 +16,10 @@ header {
     width: 100%;
     display: flex;
     background-color: dimgray;
-    box-shadow: 0 0 10px wheat;
     padding: 1rem;
     margin-bottom: 10px;
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 0 20px rgb(126, 124, 122);
 }
 
 a:link,
@@ -45,26 +43,31 @@ img {
     transition: 1s;
     opacity: 0.8;
     filter: invert(1.4);
+    border-radius: 100px;
 }
 
-img:hover{
+img:hover {
     background-color: aqua;
     box-shadow: 0 0 2rem white;
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
 }
-.luffy:hover{
+
+.luffy:hover {
     filter: sepia(100%) hue-rotate(-90deg) saturate(30);
     transition-duration: 0.5s;
 }
-.sanji:hover{
+
+.sanji:hover {
     transition-duration: 0.5s;
     filter: sepia(100%) hue-rotate(0deg) saturate(50);
 }
-.zoro:hover{
+
+.zoro:hover {
     filter: sepia(100%) hue-rotate(90deg) saturate(30);
     transition-duration: 0.5s;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -79,14 +82,16 @@ footer {
     text-align: center;
     background-color: dimgray;
     width: 100%;
-    box-shadow: 0 0 10px wheat;
+    box-shadow: 0 0 20px rgb(126, 124, 122);
     padding: 1rem;
+    border-radius: 35px 35px 0 0;
 }
 
 @media (max-width: 768px) {
     body {
         font-size: 1rem;
     }
+
     .fondo {
         margin: 0% 0% 0% 3.3rem;
         flex-direction: column;
@@ -99,7 +104,7 @@ footer {
 
     img {
         margin-bottom: 10rem;
-        margin:0%;
+        margin: 0%;
         width: 19.5rem;
     }
 
@@ -116,58 +121,57 @@ footer {
         padding: 0.5rem;
     }
 }
-/* @media (min-height: 1000px ) {
-    img {
-        width: 40rem;
-        height: 135rem;
-    }
-    .fondo {
-        margin: 0% 0% 0% 28%;
-    }
-} */
+
 @media (max-width: 810px) {
     .fondo {
         margin: 0% 0% 0% 24%;
     }
 }
+
 @media (max-width: 810px) {
     .fondo {
         margin: 0% 0% 0% 23%;
     }
 }
+
 @media (max-width: 414px) {
     .fondo {
         margin: 0% 0% 0% 13%;
     }
 }
+
 @media (max-width: 428px) {
     .fondo {
         margin: 0% 0% 0% 14%;
     }
 }
+
 @media (max-width: 412px) {
     .fondo {
         margin: 0% 0% 0% 11.8%;
     }
 }
+
 @media (max-width: 390px) {
     .fondo {
         margin: 0% 0% 0% 10%;
     }
 }
+
 @media (max-width: 388px) {
     .fondo {
         margin: 0% 0% 0% 6.8%;
     }
 }
+
 @media (max-width: 384px) {
     .fondo {
         margin: 0% 0% 0% 8.8%;
     }
 }
+
 @media (max-width: 360px) {
     .fondo {
         margin: 0% 0% 0% 6.8%;
     }
 }
-
