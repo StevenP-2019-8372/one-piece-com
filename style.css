@@ -15,18 +15,20 @@ body {
 header {
     width: 100%;
     display: flex;
-    background-color: dimgray;
+    background-color: rgb(126, 124, 122);
     padding: 1rem;
     margin-bottom: 10px;
     border-radius: 0 0 35px 35px;
     box-shadow: 0 0 20px rgb(126, 124, 122);
 }
 
+a,
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
     cursor: pointer;
+    opacity: 1;
 }
 
 .fondo {
@@ -41,31 +43,32 @@ img {
     margin: 0% 0rem 0% 1rem;
     margin-bottom: 20px;
     transition: 1s;
-    opacity: 0.8;
-    filter: invert(1.4);
+    opacity: 0.7;
+    filter: grayscale(1);
     border-radius: 100px;
 }
 
 img:hover {
-    background-color: aqua;
-    box-shadow: 0 0 2rem white;
     transform: scale(1.05);
     opacity: 1;
 }
 
 .luffy:hover {
-    filter: sepia(100%) hue-rotate(-90deg) saturate(30);
+    filter: saturate(3);
+    box-shadow: 0 0 3rem rgb(255, 2, 2);
     transition-duration: 0.5s;
 }
 
 .sanji:hover {
     transition-duration: 0.5s;
-    filter: sepia(100%) hue-rotate(0deg) saturate(50);
+    filter: saturate(3);
+    box-shadow: 0 0 3rem rgb(251, 255, 2);
 }
 
 .zoro:hover {
-    filter: sepia(100%) hue-rotate(90deg) saturate(30);
+    filter: saturate(3);
     transition-duration: 0.5s;
+    box-shadow: 0 0 3rem rgb(61, 255, 2);
 }
 
 ul {
@@ -80,7 +83,7 @@ li {
 
 footer {
     text-align: center;
-    background-color: dimgray;
+    background-color: rgb(126, 124, 122);
     width: 100%;
     box-shadow: 0 0 20px rgb(126, 124, 122);
     padding: 1rem;
@@ -110,10 +113,10 @@ footer {
         font-size: 1.6rem;
     }
     footer {
-        padding: 1rem;
+        padding: 2rem;
     }
     header {
-        padding: 1rem;
+        padding: 2rem;
     }
 }
 @media (max-width: 1600px) {
@@ -132,7 +135,7 @@ footer {
 }
 @media (max-width: 1400px) {
     .fondo {
-        margin: 0% 0% 0% 2.8%;
+        margin: 0% 0% 0% 2.2%;
     }
     body {
         font-size: 1.5rem;
