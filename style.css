@@ -15,7 +15,8 @@ body {
 header {
     width: 100%;
     display: flex;
-    background-color: rgb(126, 124, 122);
+    background-color: rgb(53, 52, 51);
+    opacity: 0.9;
     padding: 1rem;
     margin-bottom: 10px;
     border-radius: 0 0 35px 35px;
@@ -83,16 +84,65 @@ li {
 
 footer {
     text-align: center;
-    background-color: rgb(126, 124, 122);
+    background-color: rgb(53, 52, 51);
     width: 100%;
     box-shadow: 0 0 20px rgb(126, 124, 122);
     padding: 1rem;
+    opacity: 0.9;
     border-radius: 35px 35px 0 0;
+}
+
+@media (max-width: 2800px) {
+    .fondo {
+        margin: 0% 0% 0% 25%;
+    }
+    body {
+        font-size: 3rem;
+    }
+    footer {
+        padding: 4rem;
+    }
+    header {
+        padding: 3rem;
+    }
+    img{
+        height: 60rem;
+    }
+}
+
+@media (max-width: 2400px) {
+    .fondo {
+        margin: 0% 0% 0% 21%;
+    }
+    body {
+        font-size: 2.8rem;
+    }
+    footer {
+        padding: 4rem;
+    }
+    header {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 2200px) {
+    .fondo {
+        margin: 0% 0% 0% 18.5%;
+    }
+    body {
+        font-size: 2.5rem;
+    }
+    footer {
+        padding: 4rem;
+    }
+    header {
+        padding: 3rem;
+    }
 }
 
 @media (max-width: 2000px) {
     .fondo {
-        margin: 0% 0% 0% 17%;
+        margin: 0% 0% 0% 16.5%;
     }
     body {
         font-size: 2rem;
@@ -102,6 +152,9 @@ footer {
     }
     header {
         padding: 2.2rem;
+    }
+    img{
+        height: 50rem;
     }
 }
 
@@ -118,19 +171,25 @@ footer {
     header {
         padding: 2rem;
     }
+    img{
+        height: 45rem;
+    }
 }
 @media (max-width: 1600px) {
     .fondo {
         margin: 0% 0% 0% 7.8%;
     }
     body {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     footer {
         padding: 0.8rem;
     }
     header {
         padding: 0.8rem;
+    }
+    img{
+        height: 40rem;
     }
 }
 @media (max-width: 1400px) {
@@ -139,6 +198,9 @@ footer {
     }
     body {
         font-size: 1.5rem;
+    }
+    img{
+        height: 35rem;
     }
 }
 
