@@ -1,0 +1,52 @@
+
+.main {
+    padding: 2rem;
+    margin-left: 10rem; /* Ajusta según tus necesidades */
+}
+
+.personajes{
+    display:inline-block;
+    position:relative;
+}
+.personajes > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+}
+img{
+    width: 20rem;
+    height: 20rem;
+    margin: 0% 0rem 0% 0rem;
+    margin-bottom: 20px;
+    transition: 1s;
+    opacity: 1;
+    filter: grayscale(0);
+    border-radius: 10px;
+}
+.desvanecer:hover {
+    opacity: 0.09;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.historia {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.historia h1 {
+    font-size: 2rem;
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.historia p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: wheat;
+}
