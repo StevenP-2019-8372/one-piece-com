@@ -1,9 +1,17 @@
 
+*{
+    text-align: center;
+    color: rgb(216, 108, 108);
+}
+body{
+    background-image: url(img/bghhh.jpg);
+}
 .main {
     padding: 2rem;
-    margin-left: 10rem; /* Ajusta según tus necesidades */
 }
-
+header {
+    margin-bottom: 3rem;
+}
 .personajes{
     display:inline-block;
     position:relative;
@@ -19,8 +27,7 @@
 img{
     width: 20rem;
     height: 20rem;
-    margin: 0% 0rem 0% 0rem;
-    margin-bottom: 20px;
+    margin: 15px 0rem 20px 0rem;
     transition: 1s;
     opacity: 1;
     filter: grayscale(0);
@@ -35,18 +42,48 @@ img{
     transition: opacity 500ms;
 }
 .historia {
+    padding: 5rem;
     text-align: center;
-    margin: 2rem 0;
+    background-color: rgb(53, 52, 51);
+    opacity: 0.9;
+    border-radius: 25px 25px 0 0;
 }
 
-.historia h1 {
+.total-personajes{
+    background-color: rgb(53, 52, 51);
+    opacity: 0.9;
+    padding: 3rem;
+}
+.inicios{
+    background-color: rgb(53, 52, 51);
+    opacity: 0.9;
+    padding: 3rem;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 3rem;
+}
+
+.historia h1, .inicios h1, .total-personajes h1 {
     font-size: 2rem;
-    color: wheat;
     margin-bottom: 1rem;
 }
 
-.historia p {
+.historia p,.inicios p,.total-personajes p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    color: wheat;
+    line-height: 1.5;
+}
+@media (max-width: 810px) {
+    .total-personajes{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+@media (max-width: 412px) {
+    .total-personajes{
+        padding-left: 0%;
+    }
+}
+@media (max-width: 360px) {
+    .total-personajes{
+        padding-left: 0%;
+    }
 }
